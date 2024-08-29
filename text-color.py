@@ -5,3 +5,5 @@ def colorinput(text="", color=blackcolor):
     input(text)
   elif color == "red":
     input(f"\033[31m{text}")
+  else:
+    return False
