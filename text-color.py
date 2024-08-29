@@ -1,9 +1,9 @@
-redcolor = "red"
-yellowcolor = "yellow"
-bluecolor = "blue"
-whitecolor = "white"
-def colorinput(text="", color=whitecolor):
-  if color == "white":
+import colors
+blackcolor=colors.blackcolor
+def colorinput(text="", color=blackcolor):
+  if color == "black":
     input(text)
   elif color == "red":
     input(f"\033[31m{text}")
+  else:
+    return False
